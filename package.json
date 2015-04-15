@@ -1,0 +1,23 @@
+{
+  "name": "jsonCSV",
+  "main": "parser.js",
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skilbjo/jsonCSV.git"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "scripts": {
+    "start": "node homeaway.js" 
+  },
+  "dependencies": {
+    "csv": "latest"
+   , "json2csv": "latest"
+  },
+  "jshintConfig": {
+    "laxcomma": true
+  }
+}
