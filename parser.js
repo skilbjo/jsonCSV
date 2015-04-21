@@ -1,6 +1,6 @@
 var fs 					= require('fs')
 	, inFile 			= './people.json'
-	, outFile			= './people.csv'
+	, outFile			= './csvFiles/featuredAttendees.csv'
 	, json2csv 		= require('json2csv')
 	;
 
@@ -12,8 +12,8 @@ fs.readFile(inFile, 'utf-8', function(err, fileContents){
 		fs.writeFile(outFile, csv, function(err){
 			if (err) throw err;
 			console.log('file saved');
-		})
-	})
+		});
+	});
 });
 
 
